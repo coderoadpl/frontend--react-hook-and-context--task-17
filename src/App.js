@@ -1,9 +1,16 @@
 import React from 'react'
 
 export const App = () => {
+  const [count, setCount] = React.useState(0)
+
   return (
     <div>
-      CodeRoad APP
+      <h1>{count}</h1>
+      <button
+        onClick={() => setCount((prevCount) => prevCount + 1)}
+      >
+        +
+      </button>
     </div>
   )
 }
