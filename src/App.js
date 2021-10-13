@@ -9,7 +9,7 @@ export const App = () => {
     }, 1000)
 
     return () => clearInterval(intervalId)
-  }, [])
+  }, [count])
 
   return (
     <div>
